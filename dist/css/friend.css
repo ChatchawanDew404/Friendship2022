@@ -1,0 +1,59 @@
+.friend-gallery {
+  text-align: center;
+}
+
+.friend-gallery .heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.friend-gallery .heading h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.friend-gallery .heading h2 {
+  font-size: 2rem;
+}
+
+.friend-gallery .row {
+  -webkit-columns: 5 14rem;
+          columns: 5 14rem;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  padding: 30px 0;
+}
+
+.friend-gallery .row .friend-col {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.friend-gallery .row .friend-col:nth-child(1), .friend-gallery .row .friend-col:nth-child(2), .friend-gallery .row .friend-col:nth-child(3), .friend-gallery .row .friend-col:nth-child(4) {
+  display: inline-block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.friend-gallery .row .friend-col.active {
+  display: inline-block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 480px) {
+  .friend-gallery .heading {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .friend-gallery .heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .friend-gallery .heading h2 {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=friend.css.map */

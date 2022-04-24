@@ -1,0 +1,103 @@
+img{width: 100%; height: 100%; object-fit: cover;}
+.gallerys{
+    text-align: center;
+    .heading{
+        text-align: center;
+        h1{font-size: 3rem; margin-bottom: 10px;}
+        h2{font-size: 2rem; margin-bottom: 60px;}
+    }
+    .row-gallery{
+        columns: 5 14rem;
+        column-gap: 1rem;
+        padding: 30px 0;
+        .col-gallery{
+         border-radius: 10px;
+         overflow: hidden;
+         margin: 1rem 0;
+         transition: all .5s;
+         transform: scale(0);
+         display: none;
+         &:nth-child(1),
+         &:nth-child(2),
+         &:nth-child(3),
+         &:nth-child(4),
+         &:nth-child(5){display: inline-block; transform: scale(1);}
+         &.active{display: inline-block; transform: scale(1);}
+         &:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+         }
+        }
+    }
+    .btn.remove{display: none;}
+    
+}
+
+
+
+.success{
+    text-transform: capitalize;
+    .heading{ text-align: center; h1{font-size: 2.8rem; margin-bottom: 5px;  }
+h2{font-size: 2.3rem;}}
+
+.row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+
+    .col-data{
+        h1{font-size: 2.8rem;}
+        h2{font-size: 1.7rem; margin: 15px 0;}
+        p{font-size: 1.6rem; color: #88838e; line-height: 1.6;}
+    }
+    .col-img{
+        .img-box{
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .mini-img{
+            border-radius: 15px;
+            padding: 10px;
+            background: rgb(27, 1, 29);
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            cursor: pointer;
+            img{border-radius: 15px;}
+        }
+    }
+}
+}
+
+
+.success-gallery{
+    background: rgb(239, 237, 237);
+    .heading{h1{font-size: 2.5rem; margin-bottom: 40px; text-align: center; text-transform: uppercase;}}
+    .row{columns: 4 14rem;
+        gap: 10px;
+    img{border-radius: 15px;  margin-bottom: 10px;}}
+}
+
+
+
+
+
+@media(max-width:991px){
+.success{
+    .row{grid-template-columns: 1fr;}
+}
+}
+@media(max-width:480px){
+.success{
+    .heading{
+        h1{font-size: 2.3rem;}
+        h2{font-size: 1.5rem;}
+    }
+}
+}
+
+
+
+

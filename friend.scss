@@ -1,0 +1,46 @@
+.friend-gallery{
+    text-align: center;
+    .heading{
+        margin-bottom: 60px;
+        text-align: center;
+        h1{font-size: 2.8rem; margin-bottom: 10px;}
+        h2{font-size: 2rem;}
+    }
+    .row{
+        columns: 5 14rem;
+        column-gap: 1.5rem;
+        padding: 30px 0;
+        .friend-col{
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: none;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),{display: inline-block; transform: scale(1);}
+            &.active{display: inline-block; transform: scale(1);}
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:480px){
+    .friend-gallery{
+        .heading{
+            margin-bottom: 60px;
+            text-align: center;
+            h1{font-size: 2.5rem; margin-bottom: 10px;}
+            h2{font-size: 1.8rem;}
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+.thank .container .heading {
+  text-align: center;
+}
+
+.thank .container .heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.thank .container .heading h2 {
+  font-size: 1.5rem;
+}
+
+.thank .row {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.thank .row .col {
+  background: #e5e4e4;
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thank .row .col img {
+  width: 130px;
+  height: 130px;
+}
+
+.thank .row .col h1 {
+  font-size: 1.8rem;
+  color: #000;
+}
+/*# sourceMappingURL=blog.css.map */

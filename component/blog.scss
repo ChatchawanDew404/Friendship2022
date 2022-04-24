@@ -1,0 +1,22 @@
+.thank{
+    .container{
+        .heading{text-align: center; h1{font-size: 2.5rem; margin-bottom: 10px;}  h2{font-size: 1.5rem;}}
+    }
+
+    .row{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 20px;
+
+        .col{
+            background: rgb(229, 228, 228);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            img{width: 130px; height: 130px;}
+            h1{font-size: 1.8rem; color: #000;}
+        }
+    }
+}
